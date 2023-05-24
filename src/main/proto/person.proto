@@ -3,7 +3,24 @@ syntax = "proto3";
 option java_multiple_files = true;
 option java_package = "com.mateus.cardoso.course.grpccourse.grpc.lib";
 
+message Address {
+  int32 postbox = 1;
+  string street = 2;
+  string city = 3;
+}
+
+message Car {
+  string make = 1;
+  string model = 2;
+  int32 year = 3;
+}
+
+/*
+  This is my person proto file
+ */
 message Person {
   string name = 1;
   int32 age = 2;
+  Address address = 3;
+  repeated Car car = 4;
 }
