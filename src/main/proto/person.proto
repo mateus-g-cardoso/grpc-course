@@ -13,14 +13,24 @@ message Car {
   string make = 1;
   string model = 2;
   int32 year = 3;
+  BodyStyle body_style = 4;
 }
 
-/*
-  This is my person proto file
- */
+
+message Dealer {
+  map<int32, Car> model = 1;
+}
+
 message Person {
   string name = 1;
   int32 age = 2;
   Address address = 3;
   repeated Car car = 4;
+}
+
+enum BodyStyle {
+  UNKNOWN = 0; // -> Default value
+  SEDAN = 1;
+  COUPE = 2;
+  SUV = 3;
 }
