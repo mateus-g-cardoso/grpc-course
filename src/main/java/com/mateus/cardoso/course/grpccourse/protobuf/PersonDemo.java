@@ -1,5 +1,6 @@
 package com.mateus.cardoso.course.grpccourse.protobuf;
 
+import com.google.protobuf.Int32Value;
 import com.mateus.cardoso.course.grpccourse.grpc.lib.Person;
 
 import java.io.IOException;
@@ -13,7 +14,9 @@ public class PersonDemo {
     public static void main(String[] args){
         var sam1 = Person.newBuilder()
             .setName("sam")
-            .setAge(10)
+            .setAge(Int32Value.newBuilder()
+                .setValue(25)
+                .build())
             .build();
 
 

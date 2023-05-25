@@ -1,5 +1,6 @@
 package com.mateus.cardoso.course.grpccourse.protobuf;
 
+import com.google.protobuf.Int32Value;
 import com.mateus.cardoso.course.grpccourse.grpc.lib.Address;
 import com.mateus.cardoso.course.grpccourse.grpc.lib.Car;
 import com.mateus.cardoso.course.grpccourse.grpc.lib.Person;
@@ -29,7 +30,9 @@ public class CompositionDemo {
 
         var sam = Person.newBuilder()
             .setName("sam")
-            .setAge(25)
+            .setAge(Int32Value.newBuilder()
+                .setValue(25)
+                .build())
             .addAllCar(cars)
 //            .addCar(accord)
 //            .addCar(civic)

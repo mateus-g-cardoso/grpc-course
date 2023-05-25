@@ -2,6 +2,7 @@ package com.mateus.cardoso.course.grpccourse.protobuf;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.google.protobuf.Int32Value;
 import com.google.protobuf.InvalidProtocolBufferException;
 import com.mateus.cardoso.course.grpccourse.grpc.lib.Person;
 import com.mateus.cardoso.course.grpccourse.json.JPerson;
@@ -20,6 +21,7 @@ public class PerformanceTest {
         Runnable runnableJson = () -> {
             try {
                 var bytes = mapper.writeValueAsBytes(person);
+                System.out.println(bytes.length);
                 var person1 = mapper.readValue(bytes, JPerson.class);
             } catch (IOException e) {
                 throw new RuntimeException(e);
@@ -29,19 +31,22 @@ public class PerformanceTest {
         // Protobuf
         var sam = Person.newBuilder()
             .setName("sam")
-            .setAge(10)
+            .setAge(Int32Value.newBuilder()
+                .setValue(25)
+                .build())
             .build();
 
         Runnable runnableProtobuf = () -> {
             try {
                 var bytes = sam.toByteArray();
+                System.out.println(bytes.length);
                 var sam1 = Person.parseFrom(bytes);
             } catch (InvalidProtocolBufferException e) {
                 throw new RuntimeException(e);
             }
         };
 
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 1; i++) {
             runPerformanceTest(runnableProtobuf, "PROTO");
             runPerformanceTest(runnableJson, "JSON");
             System.out.println("-----------");
@@ -50,7 +55,7 @@ public class PerformanceTest {
 
     private static void runPerformanceTest(final Runnable runnable, final String method) {
         long time1 = System.currentTimeMillis();
-        for (int i = 0; i < 1_000_000; i++) {
+        for (int i = 0; i < 1; i++) {
             runnable.run();
         }
         long time2 = System.currentTimeMillis();
