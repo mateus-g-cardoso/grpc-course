@@ -1,11 +1,10 @@
-package com.mateus.cardoso.course.grpccourse.protobuf;
+package com.mateus.cardoso.course.protobuff_protocol.protobuf;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.protobuf.Int32Value;
 import com.google.protobuf.InvalidProtocolBufferException;
-import com.mateus.cardoso.course.grpccourse.grpc.lib.Person;
-import com.mateus.cardoso.course.grpccourse.json.JPerson;
+import com.mateus.cardoso.course.protobuff_protocol.grpc.lib.Person;
+import com.mateus.cardoso.course.protobuff_protocol.json.JPerson;
 
 import java.io.IOException;
 

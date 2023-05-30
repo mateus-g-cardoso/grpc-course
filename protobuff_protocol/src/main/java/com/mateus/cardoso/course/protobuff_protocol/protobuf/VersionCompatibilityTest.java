@@ -1,6 +1,6 @@
-package com.mateus.cardoso.course.grpccourse.protobuf;
+package com.mateus.cardoso.course.protobuff_protocol.protobuf;
 
-import com.mateus.cardoso.course.grpccourse.grpc.lib.Television;
+import com.mateus.cardoso.course.protobuff_protocol.grpc.lib.Television;
 
 import java.io.IOException;
 import java.nio.file.Files;

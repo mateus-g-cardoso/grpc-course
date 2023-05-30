@@ -1,8 +1,8 @@
-package com.mateus.cardoso.course.grpccourse.protobuf;
+package com.mateus.cardoso.course.protobuff_protocol.protobuf;
 
-import com.mateus.cardoso.course.grpccourse.grpc.lib.Credentials;
-import com.mateus.cardoso.course.grpccourse.grpc.lib.EmailCredentials;
-import com.mateus.cardoso.course.grpccourse.grpc.lib.PhoneOTP;
+import com.mateus.cardoso.course.protobuff_protocol.grpc.lib.Credentials;
+import com.mateus.cardoso.course.protobuff_protocol.grpc.lib.EmailCredentials;
+import com.mateus.cardoso.course.protobuff_protocol.grpc.lib.PhoneOTP;
 
 public class OneOfDemo {
 

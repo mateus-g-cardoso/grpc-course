@@ -1,4 +1,4 @@
-package com.mateus.cardoso.course.grpccourse.protobuf;
+package com.mateus.cardoso.course.protobuff_protocol.protobuf;
 
 public class DefaultValueDemo {
 

@@ -1,4 +1,4 @@
-package com.mateus.cardoso.course.grpccourse.json;
+package com.mateus.cardoso.course.protobuff_protocol.json;
 
 public class JPerson {
 

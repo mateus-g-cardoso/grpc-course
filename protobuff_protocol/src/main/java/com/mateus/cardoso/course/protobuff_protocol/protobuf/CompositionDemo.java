@@ -1,9 +1,9 @@
-package com.mateus.cardoso.course.grpccourse.protobuf;
+package com.mateus.cardoso.course.protobuff_protocol.protobuf;
 
 import com.google.protobuf.Int32Value;
-import com.mateus.cardoso.course.grpccourse.grpc.lib.Address;
-import com.mateus.cardoso.course.grpccourse.grpc.lib.Car;
-import com.mateus.cardoso.course.grpccourse.grpc.lib.Person;
+import com.mateus.cardoso.course.protobuff_protocol.grpc.lib.Address;
+import com.mateus.cardoso.course.protobuff_protocol.grpc.lib.Car;
+import com.mateus.cardoso.course.protobuff_protocol.grpc.lib.Person;
 
 import java.util.List;
 

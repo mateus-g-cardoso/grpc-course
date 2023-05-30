@@ -1,8 +1,8 @@
-package com.mateus.cardoso.course.grpccourse.protobuf;
+package com.mateus.cardoso.course.protobuff_protocol.protobuf;
 
-import com.mateus.cardoso.course.grpccourse.grpc.lib.BodyStyle;
-import com.mateus.cardoso.course.grpccourse.grpc.lib.Car;
-import com.mateus.cardoso.course.grpccourse.grpc.lib.Dealer;
+import com.mateus.cardoso.course.protobuff_protocol.grpc.lib.BodyStyle;
+import com.mateus.cardoso.course.protobuff_protocol.grpc.lib.Car;
+import com.mateus.cardoso.course.protobuff_protocol.grpc.lib.Dealer;
 
 import java.util.Map;
 

@@ -1,13 +1,11 @@
-package com.mateus.cardoso.course.grpccourse.protobuf;
+package com.mateus.cardoso.course.protobuff_protocol.protobuf;
 
 import com.google.protobuf.Int32Value;
-import com.mateus.cardoso.course.grpccourse.grpc.lib.Person;
+import com.mateus.cardoso.course.protobuff_protocol.grpc.lib.Person;
 
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.HashSet;
 
 public class PersonDemo {
 
