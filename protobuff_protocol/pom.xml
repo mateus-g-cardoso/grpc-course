@@ -3,11 +3,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.mateus.cardoso.course</groupId>
-    <artifactId>grpc-course</artifactId>
+    <groupId>com.mateus.cardoso.course.grpc</groupId>
+    <artifactId>protocol-buffers</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>protobuff_protocol</name>
-    <description>protobuff_protocol</description>
+    <name>protocol-buffers</name>
+    <description>protocol-buffers</description>
 
     <properties>
         <java.version>17</java.version>
