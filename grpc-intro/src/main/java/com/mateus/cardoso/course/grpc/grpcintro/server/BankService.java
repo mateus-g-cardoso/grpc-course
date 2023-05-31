@@ -6,7 +6,6 @@ import com.mateus.cardoso.course.grpc.grpcintro.lib.grpc.BankServiceGrpc;
 import io.grpc.stub.StreamObserver;
 
 public class BankService extends BankServiceGrpc.BankServiceImplBase {
-
     @Override
     public void getBalance(final BalanceCheckRequest request, final StreamObserver<Balance> responseObserver) {
         final var accountNumber = request.getAccountNumber();
