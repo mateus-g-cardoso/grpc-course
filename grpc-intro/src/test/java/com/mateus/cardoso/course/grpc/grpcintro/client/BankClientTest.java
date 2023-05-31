@@ -25,7 +25,7 @@ class BankClientTest {
     void balanceTest() {
         var balanceCheckRequest = BalanceCheckRequest
             .newBuilder()
-            .setAccountNumber(5)
+            .setAccountNumber(7)
             .build();
 
         var balance = blockingStub.getBalance(balanceCheckRequest);
